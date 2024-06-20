@@ -2,9 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vista Principal</title>
+
     </head>
     <body>
+        <div class="container" style="align-items: center; align-content: center; justify-content: center">
+            <h1>El juego del laberinto</h1>
+            <textarea id="map-input" placeholder="Ingresar mapa"></textarea>
+            <br>
+            <button id="start-game">Iniciar el juego</button>
+            <button id="toggle-obstacles" style="display: none;">Mostrar obstáculos</button>
+            <div id="game-board"></div>
+            <script src = "js/archivojs.js"></script>
 
+        </div>
     </body>
 </html>
