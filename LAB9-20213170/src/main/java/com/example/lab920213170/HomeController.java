@@ -9,7 +9,7 @@ import java.util.List;
 @Controller
 public class HomeController {
 
-    @GetMapping(value = {""})
+    @GetMapping(value = {"/juegolaberinto"})
     public String vistaPrincipal() {
         return "index";
     }

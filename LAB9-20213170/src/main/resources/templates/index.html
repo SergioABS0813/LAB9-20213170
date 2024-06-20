@@ -4,18 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vista Principal</title>
-
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+        <style>
+            #robot {
+                background: url('/images/robot.png') center center no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
     <body>
-        <div class="container" style="align-items: center; align-content: center; justify-content: center">
-            <h1>El juego del laberinto</h1>
-            <textarea id="map-input" placeholder="Ingresar mapa"></textarea>
-            <br>
-            <button id="start-game">Iniciar el juego</button>
-            <button id="toggle-obstacles" style="display: none;">Mostrar obstáculos</button>
-            <div id="game-board"></div>
-            <script src = "js/archivojs.js"></script>
 
+        <h1>El juego del laberinto</h1>
+        <textarea id="map-input" placeholder="Ingresar mapa"></textarea>
+        <br/><br/>
+        <button id="empieza" class="btn btn-primary">Iniciar el juego</button>
+        <div style="text-align: center;">
+            <div id="game-board"></div>
+            <br/><br/>
+            <button id="obstaculos" class="btn btn-primary" style="display: none; background-color: green">Mostrar obstáculos</button>
         </div>
+
+        <script src = "js/archivojs.js"></script>
+        <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
     </body>
 </html>

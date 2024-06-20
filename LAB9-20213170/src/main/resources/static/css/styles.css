@@ -1,0 +1,43 @@
+#map-input {
+    width: 50%;
+    height: 180px;
+    resize: both;
+    overflow: auto;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+}
+.hidden {
+    background-color: grey;
+}
+.yellow {
+    background-color: #FFFF00;
+}
+.green {
+    background-color: #88DC65;
+}
+.black {
+    background-color: #000000;
+}
+.blue {
+    background-color: #add8e6;
+}
+.monster {
+    background-size: cover;
+}
+#controls {
+    margin-top: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(11, 50px);
+    gap: 2px;
+    margin-top: 20px;
+}
